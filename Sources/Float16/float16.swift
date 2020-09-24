@@ -28,6 +28,21 @@
 extension float16 {
     
     @_transparent
+    public init(_ x: Int8) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(Float16(x))
+            return
+        }
+        
+        #endif
+        
+        self = __int8tofp16(x)
+    }
+    
+    @_transparent
     public init(_ x: Int16) {
         
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
@@ -85,6 +100,21 @@ extension float16 {
         #endif
         
         self = __inttofp16(x)
+    }
+    
+    @_transparent
+    public init(_ x: UInt8) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(Float16(x))
+            return
+        }
+        
+        #endif
+        
+        self = __uint8tofp16(x)
     }
     
     @_transparent

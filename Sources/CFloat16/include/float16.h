@@ -49,6 +49,10 @@ static inline double __fp16to64(float16 x) {
     return (double)x.storage;
 }
 
+static inline float16 __int8tofp16(char x) {
+    return (float16) { .storage = x };
+}
+
 static inline float16 __int16tofp16(short x) {
     return (float16) { .storage = x };
 }
@@ -62,6 +66,10 @@ static inline float16 __int64tofp16(long long x) {
 }
 
 static inline float16 __inttofp16(long x) {
+    return (float16) { .storage = x };
+}
+
+static inline float16 __uint8tofp16(unsigned char x) {
     return (float16) { .storage = x };
 }
 
