@@ -235,6 +235,186 @@ extension float16: CustomStringConvertible {
     }
 }
 
+extension Int8 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16toint8(x)
+    }
+}
+
+extension Int16 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16toint16(x)
+    }
+}
+
+extension Int32 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16toint32(x)
+    }
+}
+
+extension Int64 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16toint64(x)
+    }
+}
+
+extension Int {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16toint(x)
+    }
+}
+
+extension UInt8 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16touint8(x)
+    }
+}
+
+extension UInt16 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16touint16(x)
+    }
+}
+
+extension UInt32 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16touint32(x)
+    }
+}
+
+extension UInt64 {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16touint64(x)
+    }
+}
+
+extension UInt {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16touint(x)
+    }
+}
+
 #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
 
 @available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
@@ -244,10 +424,45 @@ extension Float16 {
     public init(_ x: float16) {
         self = x.storage
     }
-    
 }
 
 #endif
+
+extension Float {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16to32(x)
+    }
+}
+
+extension Double {
+    
+    @_transparent
+    public init(_ x: float16) {
+        
+        #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
+        
+        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
+            self.init(x.storage)
+            return
+        }
+        
+        #endif
+        
+        self = __fp16to64(x)
+    }
+}
 
 extension float16: BinaryFloatingPoint {
     

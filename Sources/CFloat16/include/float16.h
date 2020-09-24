@@ -41,6 +41,46 @@ typedef union {
     
 } float16;
 
+static inline char __fp16toint8(float16 x) {
+    return (char)x.storage;
+}
+
+static inline short __fp16toint16(float16 x) {
+    return (short)x.storage;
+}
+
+static inline int __fp16toint32(float16 x) {
+    return (int)x.storage;
+}
+
+static inline long long __fp16toint64(float16 x) {
+    return (long long)x.storage;
+}
+
+static inline long __fp16toint(float16 x) {
+    return (long)x.storage;
+}
+
+static inline unsigned char __fp16touint8(float16 x) {
+    return (unsigned char)x.storage;
+}
+
+static inline unsigned short __fp16touint16(float16 x) {
+    return (unsigned short)x.storage;
+}
+
+static inline unsigned int __fp16touint32(float16 x) {
+    return (unsigned int)x.storage;
+}
+
+static inline unsigned long long __fp16touint64(float16 x) {
+    return (unsigned long long)x.storage;
+}
+
+static inline unsigned long __fp16touint(float16 x) {
+    return (unsigned long)x.storage;
+}
+
 static inline float __fp16to32(float16 x) {
     return (float)x.storage;
 }
