@@ -35,6 +35,13 @@ class Float16Test: XCTestCase {
         XCTAssertEqual(MemoryLayout<float16>.alignment, 2)
     }
     
+    func testFloat16BitPattern() {
+        
+        XCTAssertEqual((0 as float16).bitPattern, 0)
+        XCTAssertEqual((1.5 as float16).bitPattern, 0x3E00)
+        XCTAssertEqual((-2.5 as float16).bitPattern, 0xC100)
+    }
+    
     func testFloat16Properties() {
         
         XCTAssertEqual(float16.ulpOfOne, 0x1p-10)
