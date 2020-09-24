@@ -310,7 +310,8 @@ extension float16: BinaryFloatingPoint {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            return float16(Float16(nan: payload, signaling: signaling))
+            self.init(Float16(nan: payload, signaling: signaling))
+            return
         }
         
         #endif
@@ -786,7 +787,7 @@ extension float16: BinaryFloatingPoint {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            return float16(x.storage.magnitude)
+            return float16(self.storage.magnitude)
         }
         
         #endif
@@ -800,7 +801,7 @@ extension float16: BinaryFloatingPoint {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            return x.storage.isEqual(other.storage)
+            return self.storage.isEqual(to: other.storage)
         }
         
         #endif
@@ -814,7 +815,7 @@ extension float16: BinaryFloatingPoint {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            return x.storage.isLess(other.storage)
+            return self.storage.isLess(than: other.storage)
         }
         
         #endif
@@ -828,7 +829,7 @@ extension float16: BinaryFloatingPoint {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            return x.storage.isLessThanOrEqualTo(other.storage)
+            return self.storage.isLessThanOrEqualTo(other.storage)
         }
         
         #endif
@@ -940,7 +941,7 @@ extension float16 {
         #if swift(>=5.3) && !os(macOS) && !targetEnvironment(macCatalyst)
         
         if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            self.storage = self.storage.formRemainder(dividingBy: other.storage)
+            self.storage.formRemainder(dividingBy: other.storage)
             return
         }
         
