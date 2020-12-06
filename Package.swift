@@ -31,6 +31,9 @@ let package = Package(
     products: [
         .library(name: "Float16", targets: ["Float16"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-numerics", from: "0.0.1"),
+    ],
     targets: [
         .target(
             name: "CFloat16",
@@ -40,6 +43,7 @@ let package = Package(
         .target(
             name: "Float16",
             dependencies: [
+                .product(name: "RealModule", package: "swift-numerics"),
                 "CFloat16",
             ]
         ),
