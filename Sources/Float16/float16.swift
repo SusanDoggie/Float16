@@ -32,7 +32,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -47,7 +47,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -62,7 +62,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -77,7 +77,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -92,7 +92,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -107,7 +107,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -122,7 +122,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -137,7 +137,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -152,7 +152,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -167,7 +167,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -180,7 +180,7 @@ extension float16 {
     #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
     
     @_transparent
-    @available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *)
+    @available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *)
     public init(_ x: Float16) {
         self.init(storage: x)
     }
@@ -192,7 +192,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -207,7 +207,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(x))
             return
         }
@@ -225,7 +225,7 @@ extension float16: CustomStringConvertible {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return self.storage.description
         }
         
@@ -242,7 +242,7 @@ extension Int8 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -260,7 +260,7 @@ extension Int16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -278,7 +278,7 @@ extension Int32 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -296,7 +296,7 @@ extension Int64 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -314,7 +314,7 @@ extension Int {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -332,7 +332,7 @@ extension UInt8 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -350,7 +350,7 @@ extension UInt16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -368,7 +368,7 @@ extension UInt32 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -386,7 +386,7 @@ extension UInt64 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -404,7 +404,7 @@ extension UInt {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -417,7 +417,7 @@ extension UInt {
 
 #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
 
-@available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *)
+@available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *)
 extension Float16 {
     
     @_transparent
@@ -435,7 +435,7 @@ extension Float {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -453,7 +453,7 @@ extension Double {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(x.storage)
             return
         }
@@ -479,7 +479,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(sign: sign, exponentBitPattern: exponentBitPattern, significandBitPattern: significandBitPattern))
             return
         }
@@ -499,7 +499,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(sign: sign, exponent: exponent, significand: significand.storage))
             return
         }
@@ -554,7 +554,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.init(Float16(nan: payload, signaling: signaling))
             return
         }
@@ -576,7 +576,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.nan)
         }
         
@@ -590,7 +590,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.signalingNaN)
         }
         
@@ -604,7 +604,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.infinity)
         }
         
@@ -618,7 +618,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.greatestFiniteMagnitude)
         }
         
@@ -636,7 +636,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.pi)
         }
         
@@ -650,7 +650,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(storage.binade)
         }
         
@@ -675,7 +675,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.significandWidth
         }
         
@@ -701,7 +701,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(storage.ulp)
         }
         
@@ -722,7 +722,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.ulpOfOne)
         }
         
@@ -736,7 +736,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.leastNormalMagnitude)
         }
         
@@ -750,7 +750,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(Float16.leastNonzeroMagnitude)
         }
         
@@ -796,7 +796,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.sign
         }
         
@@ -811,7 +811,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.exponentBitPattern
         }
         
@@ -825,7 +825,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.significandBitPattern
         }
         
@@ -839,7 +839,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.exponent
         }
         
@@ -858,7 +858,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(storage.significand)
         }
         
@@ -883,7 +883,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(storage.nextUp)
         }
         
@@ -912,7 +912,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isNormal
         }
         
@@ -926,7 +926,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isFinite
         }
         
@@ -940,7 +940,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isZero
         }
         
@@ -954,7 +954,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isSubnormal
         }
         
@@ -968,7 +968,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isInfinite
         }
         
@@ -982,7 +982,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isNaN
         }
         
@@ -996,7 +996,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isSignalingNaN
         }
         
@@ -1010,7 +1010,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return storage.isCanonical
         }
         
@@ -1031,7 +1031,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(self.storage.magnitude)
         }
         
@@ -1045,7 +1045,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return self.storage.isEqual(to: other.storage)
         }
         
@@ -1059,7 +1059,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return self.storage.isLess(than: other.storage)
         }
         
@@ -1073,7 +1073,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return self.storage.isLessThanOrEqualTo(other.storage)
         }
         
@@ -1087,7 +1087,7 @@ extension float16: BinaryFloatingPoint {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self = float16(storage.rounded(rule))
             return
         }
@@ -1170,7 +1170,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.storage.negate()
             return
         }
@@ -1185,7 +1185,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.storage.formRemainder(dividingBy: other.storage)
             return
         }
@@ -1200,7 +1200,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.storage = self.storage.truncatingRemainder(dividingBy: other.storage)
             return
         }
@@ -1215,7 +1215,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.storage.formSquareRoot()
             return
         }
@@ -1230,7 +1230,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             self.storage.addProduct(lhs.storage, rhs.storage)
             return
         }
@@ -1245,7 +1245,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(-x.storage)
         }
         
@@ -1279,7 +1279,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(lhs.storage + rhs.storage)
         }
         
@@ -1293,7 +1293,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(lhs.storage - rhs.storage)
         }
         
@@ -1307,7 +1307,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(lhs.storage * rhs.storage)
         }
         
@@ -1321,7 +1321,7 @@ extension float16 {
         
         #if (swift(>=5.3) && !(os(macOS) || targetEnvironment(macCatalyst))) || (swift(>=5.4) && !arch(x86_64))
         
-        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 7.0, *) {
+        if #available(macOS 11.0, iOS 14.0, watchOS 14.0, tvOS 14.0, *) {
             return float16(lhs.storage / rhs.storage)
         }
         
