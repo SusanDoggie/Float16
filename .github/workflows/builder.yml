@@ -68,7 +68,7 @@ jobs:
       with:
         action: test
   linux_swift_5_3:
-    name: latest-${{ matrix.image }}
+    name: ${{ matrix.image }}
     container:
       image: docker://swift:${{ matrix.image }}
     runs-on: ubuntu-latest
