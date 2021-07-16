@@ -69,14 +69,15 @@ jobs:
       with:
         action: test
   linux_swift_nightly:
-    name: nightly-${{ matrix.distro }}
+    name: nightly-${{ matrix.swift_version }}-${{ matrix.distro }}
     container:
-      image: docker://swiftlang/swift:nightly-${{ matrix.distro }}
+      image: docker://swiftlang/swift:nightly-${{ matrix.swift_version }}-${{ matrix.distro }}
     runs-on: ubuntu-latest
     continue-on-error: true
     strategy:
       fail-fast: false
       matrix:
+        swift_version: [5.5, main]
         distro: [xenial, bionic, focal, centos8, amazonlinux2]
     steps:
     - uses: actions/checkout@v1
