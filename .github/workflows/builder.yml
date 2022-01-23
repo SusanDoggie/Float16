@@ -77,7 +77,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        swift_version: [main]
+        swift_version: [5.6, main]
         distro: [xenial, bionic, focal, centos8, amazonlinux2]
         exclude:
           - swift_version: main
