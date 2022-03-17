@@ -46,7 +46,7 @@ jobs:
         action: test
     - uses: codecov/codecov-action@v2
       if: ${{ matrix.enable_codecov }}
-  linux_swift:
+  ubuntu_swift:
     name: ${{ matrix.swift_version }}-${{ matrix.distro }}
     container:
       image: docker://swift:${{ matrix.swift_version }}-${{ matrix.distro }}
@@ -54,8 +54,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        swift_version: [5.3, 5.4, 5.5]
-        distro: [xenial, bionic, focal, centos8, amazonlinux2]
+        swift_version: [5.3, 5.4, 5.5, 5.6]
+        distro: [xenial, bionic, focal]
+        exclude:
+          - swift_version: 5.6
+            distro: xenial
     steps:
     - uses: actions/checkout@v1
       with:
@@ -68,7 +71,7 @@ jobs:
       uses: SusanDoggie/swift-action@main
       with:
         action: test
-  linux_swift_nightly:
+  ubuntu_swift_nightly:
     name: nightly-${{ matrix.swift_version }}-${{ matrix.distro }}
     container:
       image: docker://swiftlang/swift:nightly-${{ matrix.swift_version }}-${{ matrix.distro }}
@@ -77,11 +80,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        swift_version: [5.6, main]
-        distro: [xenial, bionic, focal, centos8, amazonlinux2]
-        exclude:
-          - swift_version: main
-            distro: xenial
+        swift_version: [main]
+        distro: [bionic, focal]
     steps:
     - uses: actions/checkout@v1
       with:
